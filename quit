@@ -1,0 +1,11 @@
+[1mdiff --git a/src/main/java/com/jane/ws/api/EurekaResourceServer/controllers/UsersController.java b/src/main/java/com/jane/ws/api/EurekaResourceServer/controllers/UsersController.java[m
+[1mindex cc51e8b..401d064 100644[m
+[1m--- a/src/main/java/com/jane/ws/api/EurekaResourceServer/controllers/UsersController.java[m
+[1m+++ b/src/main/java/com/jane/ws/api/EurekaResourceServer/controllers/UsersController.java[m
+[36m@@ -36,4 +36,6 @@[m [mpublic class UsersController {[m
+     public UserRest getUser(@PathVariable String id, @AuthenticationPrincipal Jwt jwt){[m
+         return new UserRest("8af74e98-5467-459c-9a63-1888e7be1785","Ritu", "Bafna");[m
+     }[m
+[32m+[m
+[32m+[m
+ }[m

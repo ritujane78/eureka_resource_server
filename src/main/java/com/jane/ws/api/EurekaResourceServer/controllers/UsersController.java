@@ -36,4 +36,6 @@ public class UsersController {
     public UserRest getUser(@PathVariable String id, @AuthenticationPrincipal Jwt jwt){
         return new UserRest("8af74e98-5467-459c-9a63-1888e7be1785","Ritu", "Bafna");
     }
+
+
 }

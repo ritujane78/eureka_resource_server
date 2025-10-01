@@ -1,15 +1,21 @@
 # Resource Server - Eureka
 
-
 ## Versions
-- Java: 21
-- Spring Boot: 3.5.6
-- Spring Cloud: 2025.0.0
+- **Java:** 21
+- **Spring Boot:** 3.5.6
+- **Spring Cloud:** 2025.0.0
 
-The APIs can only be accessed after providing authorized access token in the headers of the request URI
-and passes through a Gateway using **Eureka Server**    .
+---
 
-Blockage of http requests through CORS is also handled in ** SecurityConfig ** java file.
+## Project Overview
+This microservice provides APIs that can only be accessed with an **authorized access token** included in the request headers.  
+All requests pass through a **Gateway** using **Eureka Server** for service discovery and routing.
 
-Note: When using API Gateway for routing this microservice's APIs, disable the CORS handling implementation as that has already been handled in that project, 
-else the project won't work.
+### CORS Handling
+CORS (Cross-Origin Resource Sharing) issues are handled in the **`SecurityConfig`** Java file.
+
+> **Note:**  
+> When using the **API Gateway** to route requests to this microservice's APIs, disable the CORS handling in this service.  
+> The Gateway already handles CORS, and enabling it here will cause the project to fail.
+
+---
